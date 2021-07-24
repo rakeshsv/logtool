@@ -148,13 +148,13 @@ echo "===== Section: amdgpu udev rule        ==============="
 cat /etc/udev/rules.d/70-amdgpu.rules
 
 # lsinitrd or lsinitramfs dump
-echo "===== Section: lsinitrd lsinitramfs    ==============="
-if [ "$pkgtype" = "deb" ]
-then
-    /usr/bin/lsinitramfs /boot/initrd.img-$(/bin/uname -r)
-else
-    sudo /usr/bin/lsinitrd
-fi
+#echo "===== Section: lsinitrd lsinitramfs    ==============="
+#if [ "$pkgtype" = "deb" ]
+#then
+#    /usr/bin/lsinitramfs /boot/initrd.img-$(/bin/uname -r)
+#else
+#    sudo /usr/bin/lsinitrd
+#fi
 
 # Hardware Topology
 echo "===== Section: Hardware Topology       ==============="
